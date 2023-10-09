@@ -6,6 +6,7 @@
 html {
     height: 100%;
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 main {
     background-color: dimgray;
@@ -362,6 +363,10 @@ section{
         border-radius: 30px;
         box-shadow: 10px 10px 10px 10px black;
     }
+    .elementos-s-st {
+        border-right:3px solid black;
+        border-radius: 15px;
+    }
     .cont-s-st img{
         height: 200px;
         width: 200px;
@@ -401,7 +406,7 @@ section{
 /*--inicio footer--*/
 footer{
     width: 100%;
-    height: 150px;
+    height: 100%;
     padding-block: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 15px;
@@ -424,3 +429,65 @@ footer h6:hover a{
     color: rgb(105, 135, 255);
 }
 /*--fin footer--*/
+/*--medias quaries, grids, bootstrap--*/
+@media screen and (max-width: 650px) {
+    .inicio {
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+    }
+    .slider-contenido{
+        flex-wrap: wrap;
+    }
+    .vistazo img {
+        opacity: 0.2;
+    }
+    .vistazo{
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 0% 100%;
+        padding: 5px;
+        text-indent: 0%;
+    }
+    .container-p img {
+        opacity: 0.2;
+    }
+    .container-p {
+        grid-template-columns: 0% 100%;
+    }
+    .container-s img {
+        opacity: 0.2;
+    }
+    .container-2 {
+        text-indent: 0%;
+        grid-template-columns: 0% 100% ;
+    }
+    .not-prin-st {
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+    }
+    .imgyp-p-st {
+        flex-direction: column;
+    }
+    .imgyp-p-st img {
+        width: 100%; 
+        max-width: none;}
+    .cont-s-st {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;}
+    .elementos-s-st{
+        border-top: 3px solid black;
+    }
+    .cont-s-st img{
+        width: 100px;
+        height: 100px;
+    }
+    .img-prin-streaming img {
+        width: 100%; 
+        max-width: none;
+    }
+    }
+
