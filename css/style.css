@@ -18,7 +18,7 @@ section{
 /*inicio de estilos header*/
 .container-fluid{
     display: flex;
-    background-color: rgb(5, 0, 7);
+    background-image: linear-gradient(to top,rgb(105, 135, 255), black);
     justify-content: flex-end;
     padding: 10px;
     font-size: 20px;
@@ -411,7 +411,7 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 15px;
     justify-content: flex-end;
-    background-color: black;
+    background-image: linear-gradient(to top,rgb(105, 135, 255), black);
     
 }
 footer img{
