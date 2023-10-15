@@ -1,0 +1,231 @@
+/*--inicio gaming--*/
+.tit-gaming{
+    @extend .flex-center;
+    text-align: center;
+    &:hover h2{
+        color:$hover-tit;
+    }
+    .tex-gaming{
+        color: white;
+        border: 5px solid;
+        height: 60px;
+        width: 600px;
+        border-radius: 30px;
+        background-image: $color-tit ;
+    }
+}
+.container-p {
+    @extend.grid-pading;
+    gap: 20px;
+    box-shadow: $box-shadow-img;
+    border-radius: 20px;
+    margin: 80px auto;
+    width: 80%;
+    height: 400px;
+    overflow: auto;
+    background-color: $background-cont;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "imgprincipal pprincipal";
+        a{
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+    }
+    img{
+        width: 300px;
+        height: 350px;
+        border-radius: 30px;
+        box-shadow: $box-shadow-img;
+        transition: $transiciones;
+        object-fit: cover;
+        &:hover{
+            transform: $hover-img;
+            &hover{
+                color:$hover-color;
+            }
+        }
+    }
+    &::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to top, #00dbde 0%, #fc00ff) ;
+        border-radius: 6px;
+    }
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 0px;
+        border-radius: 6px;
+    }
+}
+.imgprincipal{
+    grid-area: imgprincipal;
+}
+.pprincipal{
+    grid-area: pprincipal;
+    text-indent: 15%;
+    p{
+        text-indent: 15%;
+    }
+    h1{
+        padding: 15px;
+    }
+}
+.container-s{
+    @extend.grid-pading;
+    gap: 5px;
+    box-shadow: $box-shadow-img;
+    border-radius: 20px;
+    margin: 80px auto;
+    width: 100%;
+    height: 350px;
+    overflow: scroll;
+    background-color: $background-cont;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "img-s p-s";
+    img {
+        width: 400px;
+        height: 300px;
+        border-radius: 30px;
+        box-shadow: $box-shadow-img;
+        transition: $transiciones;
+        object-fit: cover;
+        &:hover {
+            transform: $hover-img;
+        }
+    }
+    &::-webkit-scrollbar{
+        width: 10px;
+        height: 0px;
+        border-radius: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-image: $color-tit ;
+        border-radius: 6px;
+    }
+    .img-s {
+        grid-area: img-s;
+        align-items: center;
+    }
+    .p-s {
+        grid-area: p-s;
+        text-indent: 15%;
+        font-size: 15px;
+        h2{
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: $hover-color;
+            }
+        }
+    }
+}
+/*--inicio streaming--*/
+.streaming-principal {
+    @extend .flex-center;
+    width: 80%;
+    height: 400px;
+    padding: 20px;
+}
+.tit-prin-streaming{
+    @extend.flex-center;
+    h1{
+        color: white;
+        border: 5px solid;
+        height: 60px;
+        width: 600px;
+        border-radius: 30px;
+        text-align: center;
+        background-image: $color-tit ;
+        &:hover{
+            color: $hover-tit;
+        }
+    }
+}
+.img-prin-streaming{
+    @extend .flex-center;
+    img{
+        border-radius: 40px;
+        height: auto;
+        width: auto;
+        box-shadow: $box-shadow-img;
+    }
+}
+.not-prin-st{
+    @extend .flex-center;
+    flex-wrap: wrap;
+}
+.imgyp-p-st{
+    @extend .flex-center;
+    width: 1000px; 
+    height: auto;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: $box-shadow-img;
+    border-radius: 20px;
+    background-color: $background-cont;
+    img{
+        width: 400px;
+        height: 300px;
+        display: flex;
+        align-items: flex-start;
+        border-radius: 30px;
+        transition: 0.5s ease;
+        &:hover{
+            transform: $hover-img;
+        }
+    }
+    p{
+        text-indent: 15%;
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+.cont-s-st{
+    @extend .grid-pading;
+    margin: 20px;
+    gap: 15px;
+    border: 5px solid black;
+    background-color:$background-cont;
+    grid-template-columns: 33% 33% 33%;
+    border-radius: 30px;
+    box-shadow: $box-shadow-img;
+    img{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        box-shadow: $box-shadow-img;
+        transition:$transiciones;
+        &:hover{
+            transform: $hover-img;
+        }
+    }
+    .elementos-s-st {
+        border-right:3px solid black;
+        border-radius: 15px;
+    }
+}
+/*--inicio de citas--*/
+.cita {
+background-color:$background-cont;
+border-left: 5px solid #333;
+margin: 40px;
+padding: 20px;
+border-radius: 5px;
+width: 300px;
+height: 300px;
+display: inline-block;
+border-radius: 30px;
+.autor {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+    }
+blockquote {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    }
+}

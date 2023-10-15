@@ -1,0 +1,21 @@
+/*inicio de estilos header*/
+.container-fluid{
+    display: flex;
+    background-image: $background-color;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    img{
+        max-width: 15%;
+        border-radius: 100%;
+    }
+    ul li a{
+        color: white;
+        text-align: center;
+        &:hover a{
+            color:$hover-color;
+        }
+    }
+}
+/*--fin de estilos header*/

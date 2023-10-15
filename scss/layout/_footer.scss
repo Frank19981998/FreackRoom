@@ -1,0 +1,23 @@
+/*--inicio footer--*/
+footer{
+    @extend.cienxcien;
+    padding-block: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 15px;
+    justify-content: flex-end;
+    background-image: $background-color;
+    img{
+        padding-top: 10px;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    h6:hover a{
+        color: $hover-color;
+    }
+}
+/*--fin footer--*/

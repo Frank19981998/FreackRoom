@@ -1,0 +1,108 @@
+/*--inicio main--*/
+.tit-inicio {
+    text-align: center;
+    @extend.flex-center;
+    h1:hover{
+        color: rgb(0, 2, 9) ;
+    }
+    .texto{
+        color: white;
+        border: 5px solid;
+        height: 60px;
+        width: 600px;
+        border-radius: 30px;
+        background-image: $color-tit ;
+    }
+}
+.inicio {
+    width:900px;
+    height:450px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: $box-shadow-img;
+    ul{
+        display: flex;
+        padding: 0%;
+        width: 400%;
+        animation:clientes 12s infinite ease-in-out;
+        li{
+            list-style: none;
+            width: 100%;
+        }
+    }
+    img { @extend.cienxcien;}
+    @keyframes clientes {
+        0%{margin-left: 0%;}
+        20%{margin-left: 0%;}
+    
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+    
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+    
+        75%{margin-left: -300%;}
+        95%{margin-left: -300%;}
+    }
+}
+/*--carrusel inicio--*/
+.slider-contenido{
+    @extend.flex-center;
+    padding: 30px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    object-fit: cover;
+    .contenido-inicio{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+        }
+        a{
+            text-decoration:none;
+        }
+        h5 {
+            font-size: 18px;
+            color: black;
+            &:hover a{
+                color: $hover-color;
+            }
+        }
+    }
+}
+.vistazo  {
+    @extend .grid-pading;
+    grid-template-columns: 40% 60%;
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    box-shadow: $box-shadow-img;
+    border-radius: 15px;
+    font-size: 20px;
+    text-indent: 30px;
+    color: black;
+    background-color:$background-cont;
+    img{
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+        padding: 10px;
+        transition: $transiciones;
+        object-fit: cover;
+        &:hover{
+            transform: $hover-img;
+        }
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    .texto-vistazo a:hover {
+        color:$hover-color;
+    }
+}
