@@ -1,21 +1,23 @@
 /*inicio de estilos header*/
-.container-fluid{
+.container-fluid {
+    @extend.cienxcien;
     display: flex;
     background-image: $background-color;
-    justify-content: flex-end;
-    padding: 10px;
+    justify-content: space-between; 
+    padding: auto;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    img{
-        max-width: 15%;
+    img {
+        width: 100px;
         border-radius: 100%;
     }
-    ul li a{
+    ul li a {
         color: white;
         text-align: center;
-        &:hover a{
-            color:$hover-color;
+        &:hover a {
+            color: rgb(105, 135, 255);
         }
     }
 }
+
 /*--fin de estilos header*/
