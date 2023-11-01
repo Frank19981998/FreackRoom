@@ -15,12 +15,19 @@
                 width: 48%;
             }
         }
+    .contenedorvis{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
     .vistazo{
-        height: 300px;
+        height: 400px;
         width: 100%;
         grid-template-columns: 0% 100%;
         margin: 15px;
-        gap: 0%;
+        gap: 10px;
         text-indent: 0%;
         overflow: scroll;
         img {
